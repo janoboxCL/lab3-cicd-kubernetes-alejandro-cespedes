@@ -18,8 +18,8 @@ spec:
         - name: DOCKER_TLS_CERTDIR
           value: ""
 
-    - name: kubectl
-      image: registry.k8s.io/kubectl:v1.36.1
-      command:
-        - cat
-      tty: true
+- name: kubectl
+  image: alpine/kubectl:1.36.1
+  command:
+    - cat
+  tty: true
